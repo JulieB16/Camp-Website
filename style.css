@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    border-radius: 0;
+    top: 0;
+}
+
+nav {
+    background-color: #b4ebff;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+  }
+  
+nav img {
+    width: 10vw;
+}
+  
+#navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+    gap: 2rem;
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+#navBar li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navBar li a {
+    color: black;
+    text-decoration: none;
+}
+
+#navBar li:hover{
+    transform: scale(1.1);
+}
+
+body{
+    background-color: rgb(254, 254, 254);
+}
+
+#titleArea {
+    display: flex;
+}
+
+#introHeading {
+    display: flex;
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+#introHeading div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#introHeading h1{
+    color: #b4ebff;
+    font-size: 8vw;
+    text-shadow:
+    -1px -1px 0 rgb(0, 97, 121),
+     1px -1px 0 black,
+    -1px  1px 0 rgb(0, 0, 0),
+     1px  1px 0 rgb(0, 0, 0);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#introHeading img {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    align-self: center;
+}
+
+#introHeading h2{
+    /*
+    color: #fff5bd;
+    text-shadow:
+    -1px -1px 0 rgb(182, 166, 0),
+     1px -1px 0 black,
+    -1px  1px 0 rgb(182, 166, 0),
+     1px  1px 0 black;*/
+    text-align: center;
+    margin: 1rem;
+    font-size: 3.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#AboutUs {
+    background-color: #fff5bd;
+    width: 100vw;
+}
+
+#AboutUs h1 {
+    color: #b4ebff;
+    font-size: 2.5rem;
+    text-shadow:
+    -1px -1px 0 rgb(0, 97, 121),
+     1px -1px 0 black,
+    -1px  1px 0 rgb(0, 97, 121),
+     1px  1px 0 rgb(0, 97, 121);
+    padding: 1rem 0 1rem 2rem;
+}
+
+#AboutUs p {
+    padding: 0 2rem 2rem 2rem;
+    font-size: 1.1rem;
+    line-height: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
