@@ -1,0 +1,360 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff; /* clean white background */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #070707; /* dark text */
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    background-color: #2F4156; /* dark teal navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #070707;
+    padding: 1rem 5vw;
+}
+
+nav img {
+    width: clamp(60px, 10vw, 140px);
+    height: auto;
+    background-color: white;
+    border: solid #2F4156 0vw;
+    border-radius: 50%;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(1rem, 5vw, 5rem);
+    flex-wrap: wrap;
+}
+
+#navBar li {
+    list-style: none;
+    font-size: clamp(1rem, 2.2vw, 1.8rem);
+}
+
+#navBar li a {
+    color: #ffffff; /* white links on dark navbar */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#navBar li:hover a {
+    color: rgb(196, 221, 251);
+    transform: scale(1.05);
+}
+
+/* ---------- SECTION CONTAINERS ---------- */
+section {
+    width: 100%;
+    padding: clamp(3rem, 2vw, 10rem) 5vw;
+}
+
+/* ---------- INTRO ---------- */
+#titleArea {
+    border-bottom: 1px solid #070707;
+    background-color: #f9fcff;
+    display: flex;
+    justify-content: center;
+}
+
+#introHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+#introHeading img {
+    width: clamp(200px, 40vw, 400px);
+    height: auto;
+}
+
+#introHeading h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: #479397;
+    text-shadow: none;
+}
+
+#introHeading h2 {
+    color: #070707;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    max-width: 800px;
+    margin-top: 1rem;
+}
+
+#registerBtn {
+    margin: auto; 
+    margin-top: 3vw;
+    display: block;
+    background-color: #479397;
+    padding: 2vw;
+    border: #479397 solid;
+    border-radius: 10%;
+}
+
+#registerBtn a {
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#registerBtn:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- ABOUT US ---------- */
+#AboutUs {
+    background-color: #2F4156;
+    text-align: center;
+    border-bottom: 1px solid #070707;
+}
+
+#AboutUs h1 {
+    color: #e0edf6; /* teal heading */
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+#AboutUs p {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+}
+
+/* ---------- CAMP DETAILS ---------- */
+#CampDetails {
+    background-color: #f9fcff; /* soft yellow accent */
+    text-align: center;
+    border-bottom: 1px solid #070707;
+    width: 100%;
+}
+
+#CampDetails h1 {
+    color: #2F4156;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+#CampDetails ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    margin-bottom: 2rem;
+    padding: 0;
+    color: #070707;
+}
+
+#CampDetails p {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #070707;
+}
+
+/* ---------- FAQS ---------- */
+#FAQs {
+    background-color: #2F4156;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#FAQs h1 {
+    color: #e0edf6;
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.shown {
+    padding: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 90%;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.rotate:hover {
+    transform: rotate(180deg) scale(1.1) !important;
+}
+
+#FAQs h3 {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    font-weight: 525;
+    padding-right: 1rem;
+    color: white;
+}
+
+#FAQs img {
+    width: clamp(20px, 5vw, 40px);
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#FAQs img:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-left: 1px solid #070707;
+    border-right: 1px solid #070707;
+}
+
+.hidden.show {
+    max-height: 800px;
+    opacity: 1;
+    padding: 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    background-color: white; /* subtle highlight */
+    max-width: 800px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#lastFAQ {
+    border-bottom: 1px solid #070707;
+}
+
+/* ---------- CONTACT ---------- */
+#contact {
+    background-color: #f9fcff;
+    text-align: center;
+    color: #2F4156;
+}
+
+#contact h1 {
+    color: #2F4156;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+#contact p {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+    #registerBtn {
+        margin: 4vw auto -2vw auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #introHeading {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        text-align: left;
+    }
+
+    #introHeading div {
+        flex: 1;
+        padding: 2rem;
+    }
+
+    #introHeading h1 {
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    #introHeading img {
+        width: 20rem !important;
+    }
+
+    #introHeading h2 {
+        text-align: center;
+    }
+
+    #introHeading,
+    #AboutUs,
+    #CampDetails,
+    #FAQs,
+    #contact {
+        padding-bottom: 5vh;
+    }
+    nav img {
+        width: clamp(40px, 8vw, 100px);
+        height: auto;
+    }
+    #registerBtn a {
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+    }
+}
+
+@media (min-width: 1600px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 6rem 10vw;
+    }
+
+    #introHeading,
+    #AboutUs,
+    #CampDetails,
+    #FAQs,
+    #contact {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    #introHeading h1 {
+        font-size: 4rem !important;
+        text-align: center;
+    }
+
+    #introHeading img {
+        width: 28rem !important;
+    }
+}
+
